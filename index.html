@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather Widget</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="navbar">
+			<span class="navbar-title">Weather</span>
+			<span id="temperature" class="navbar-temperature">0°C</span>
+		</div>
+
+		<!-- Button untuk memilih kota -->
+		<div id="city-selection-container">
+			<button
+				class="jakarta"
+				onclick="chooseCity('-6.1751,106.8650', 'Jakarta')"
+			></button>
+			<button
+				class="surabaya"
+				onclick="chooseCity('-7.2504,112.7688', 'Surabaya')"
+			></button>
+			<button
+				class="bandung"
+				onclick="chooseCity('-6.9147,107.6098', 'Bandung')"
+			></button>
+			<button
+				class="semarang"
+				onclick="chooseCity('-6.9667,110.4167', 'Semarang')"
+			></button>
+		</div>
+
+		<script src="renderer.js"></script>
+	</body>
+</html>
