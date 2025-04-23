@@ -1,0 +1,30 @@
+{
+  "name": "weather-widget",
+  "version": "1.0.0",
+  "description": "Weather Widget App",
+  "main": "main.js",
+  "build": {
+    "appId": "com.weather.widget",
+    "productName": "WeatherWidget",
+    "files": [
+      "**/*"
+    ],
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^35.1.2",
+    "electron-builder": "^26.0.12"
+  }
+}
