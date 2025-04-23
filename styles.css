@@ -1,0 +1,81 @@
+body {
+  font-family: 'Press Start 2P', cursive, Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  transition: background 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.clear-sky {
+  background-image: url('images/sunny.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.cloudy {
+  background-image: url('images/cloudy.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.rainy {
+  background-image: url('images/rainy.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.navbar {
+  background-color: #E6B2BA;
+  color: #4D55CC;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: larger;
+}
+.navbar-title{
+  margin-left: 20px;
+}
+.navbar-temperature{
+  margin-right: 20px;
+}
+
+#city-selection-container {
+    background-color: #FAD0C4; /* Warna latar belakang transparan */
+    display: grid;
+    grid-template-columns: repeat(2, 100px); /* 2 kolom */
+    gap: 20px; /* Jarak antar tombol */
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    padding: 20px; /* Padding untuk tata letak */
+    margin: 0 auto;
+    height: 70vh;
+}
+
+button {
+    width: 74px; /* Sesuaikan ukuran tombol */
+    height: 74px;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 10px;
+}
+
+button:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+button.jakarta { background-image: url('images/jakarta.jpg'); }
+button.surabaya { background-image: url('images/surabaya.jpg'); }
+button.bandung { background-image: url('images/bandung.jpg'); }
+button.semarang { background-image: url('images/semarang.jpg'); }
